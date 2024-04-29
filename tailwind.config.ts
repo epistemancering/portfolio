@@ -1,0 +1,9 @@
+export default {
+  content: ["./app/**/*.tsx", "./components/**/*.tsx"],
+  theme: {
+    boxShadow: { darksmall: "0 6px 3px theme(colors.darkfaint1), 0 4px 2px theme(colors.darkfaint1), 0 2px 2px rgba(9, 11, 17, .02), 0 0 1px theme(colors.darkfaint2)", darklarge: "0 28px 11px theme(colors.darkfaint1), 0 16px 10px theme(colors.darkfaint2), 0 7px 7px theme(colors.darkfaint3), 0 2px 4px rgba(9, 11, 17, .06)", whitesmall: "0 6px 3px theme(colors.whitefaint1), 0 4px 2px theme(colors.whitefaint1), 0 2px 2px rgba(255, 255, 255, .02), 0 0 1px theme(colors.whitefaint2)", whitelarge: "0 28px 11px theme(colors.whitefaint1), 0 16px 10px theme(colors.whitefaint2), 0 7px 7px theme(colors.whitefaint3), 0 2px 4px rgba(255, 255, 255, .06)" },
+    backgroundImage: { darkborder: "linear-gradient(theme(colors.gray4), theme(colors.gray2))", lightborder: "linear-gradient(theme(colors.gray10), theme(colors.gray8))" },
+    colors: { accentdark: "rgb(28, 0, 86)", accentregular: "rgb(118, 17, 166)", accentlight: "rgb(197, 97, 246)", accentfaint: "rgba(196, 96, 246, .33)", gray0: "rgb(9, 11, 17)", gray1: "rgb(20, 25, 37)", gray2: "rgb(40, 48, 68)", gray3: "rgb(61, 70, 99)", gray4: "rgb(80, 93, 132)", gray5: "rgb(100, 116, 162)", gray6: "rgb(132, 144, 181)", gray7: "rgb(163, 172, 200)", gray8: "rgb(195, 202, 219)", gray9: "rgb(227, 230, 238)", gray10: "rgb(243, 244, 247)", gray11: "white", darkfaint1: "rgba(9, 11, 17, .01)", darkfaint2: "rgba(9, 11, 17, .03)", darkfaint3: "rgba(9, 11, 17, .05)", darkfaint4: "rgba(9, 11, 17, .4)", whitefaint1: "rgba(255, 255, 255, .01)", whitefaint2: "rgba(255, 255, 255, .03)", whitefaint3: "rgba(255, 255, 255, .05)", whitefaint4: "rgba(255, 255, 255, .4)" }
+  },
+  plugins: []
+}

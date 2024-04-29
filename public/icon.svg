@@ -1,0 +1,11 @@
+<svg xmlns = "http://www.w3.org/2000/svg" viewBox = "23 39 210 178" stroke = "url(#lineargradient)" fill = "url(#lineargradient)">
+    <g>
+        <path fill = "none" stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "16" d = "m80 96 40 32-40 32m56 0h40" />
+        <rect width = "192" height = "160" x = "32" y = "48" fill = "none" stroke-linecap = "round" stroke-linejoin = "round" stroke-width = "16.97" rx = "8.5" />
+    </g>
+    <linearGradient id = "lineargradient" gradientUnits = "userSpaceOnUse" x1 = "23" x2 = "235" y1 = "43" y2 = "202">
+        <stop stop-color = "rgb(197, 97, 246)" />
+        <stop offset = ".5" stop-color = "rgb(118, 17, 166)" />
+        <stop offset = "1" stop-color = "rgb(28, 0, 86)" />
+    </linearGradient>
+</svg>
