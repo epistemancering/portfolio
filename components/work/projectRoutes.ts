@@ -9,7 +9,7 @@ const projectRoutes: {
 } = {
     ["coplay-xm"]: {
         title: "CoPlay XM",
-        description: "We're providing a fleet management solution for gaming consoles that enables children's hospitals to provide games to patients.",
+        description: "I worked on a fleet management solution for gaming consoles that enables children's hospitals to provide games to patients.",
         skills: ["TypeScript", "React", "Chakra", "NodeJS", "Firestore", "AWS Lambda", "AWS EventBridge"],
         links: [{ label: "Demo", href: "https://drive.google.com/file/d/1OISJlhkaFDcflL25iiv_ztTcZc22Y__7/edit" }, { label: "Hosted Site", href: "https://xm.coplay.io/sign-in" }]
     },
@@ -46,7 +46,7 @@ const projectRoutes: {
 }
 projectRoutes["coplay-xm"].markdown = `CoPlay XM grew out of common difficulties that children's hospitals experience in attempting to provide games to patients. Modern gaming consoles don't merely boot up game discs that run in isolation, they contain full operating systems with a multitude of online features. Whenever a patient is assigned to a room with an online console, it's possible that the previous patient installed inappropriate software, changed the privacy settings, or even left behind chat messages referencing their confidential medical information. This means that hospital staff must manually clear and reconfigure consoles for every patient change, which makes them prohibitively time consuming to provide. With CoPlay XM, however, a fleet of hundreds of Xbox One and Xbox Series consoles can be managed from a single web interface. Hospital staff can use the CoPlay XM app to create a custom profile with the correct privacy settings and software, and then apply the profile at the tap of a button, remotely reconfiguring as many consoles as needed as often as needed with no manual work.
 
-As a web developer at Coplay, the startup that launched CoPlay XM in 2023, I work on all layers of the technical stack as needed, including the React/Chakra front end, the Lambda/EventBridge back end, and the Firestore database, all in TypeScript. A few of my individual contributions:
+As a web developer at Coplay, the startup that launched CoPlay XM in 2023, I worked on all layers of the technical stack as needed, including the React/Chakra front end, the Lambda/EventBridge back end, and the Firestore database, all in TypeScript. A few of my individual contributions:
 
 - A feature that allows users to set actions to an automatic schedule, e.g. reconfiguring consoles at 2:00 each morning, making fleets truly trivial to manage
 - Logic that automatically retries any unsuccessful action after a brief delay, assuring reliable service even when the Xbox Live API is overloaded
