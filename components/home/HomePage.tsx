@@ -21,7 +21,7 @@ export default function HomePage() {
             </div>
             <Image className = {`${getDark ? "shadow-whitelarge" : "shadow-darklarge"} rounded-3xl lg:rounded-[72px] w-full lg:w-2/5 max-w-[480px] lg:max-w-[456px] aspect-[1.25] lg:aspect-auto object-top lg:object-center`} style = {{ height: "auto", objectFit: "cover" }} height = {640} width = {480} src = {"/portrait.png"} priority alt = {"Austin Henrie"} />
         </header>
-        <ul className = {`mt-8 lg:mt-20 mb-20 lg:mb-48 rounded-xl lg:rounded-3xl ${getDark ? "shadow-whitesmall bg-darkfaint4 text-gray2" : "shadow-darksmall bg-whitefaint4 text-gray9"} p-6 lg:p-10 gap-3.5 lg:gap-y-[51px] lg:gap-x-20`} style = {{ marginRight: "24px", marginLeft: "24px", borderStyle: "solid", borderWidth: "1px", maxWidth: "1198px", display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
+        <ul className = {`mt-8 lg:mt-20 mb-20 lg:mb-48 rounded-xl lg:rounded-3xl ${getDark ? "shadow-whitesmall bg-darkfaint4 text-gray2" : "shadow-darksmall bg-whitefaint4 text-gray9"} p-6 lg:p-10 gap-2.5 lg:gap-y-[51px] lg:gap-x-20`} style = {{ marginRight: "24px", marginLeft: "24px", borderStyle: "solid", borderWidth: "1px", maxWidth: "1198px", display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
             <HomeSkill src = {"javascript.svg"} name = {"JavaScript"} />
             <HomeSkill src = {"python.svg"} name = {"Python"} />
             <HomeSkill src = {"typescript.svg"} name = {"TypeScript"} />
@@ -33,6 +33,7 @@ export default function HomePage() {
             <HomeSkill src = {"streamlit.svg"} name = {"Streamlit"} />
             <HomeSkill src = {"expo.svg"} name = {"Expo"} />
             <HomeSkill src = {"nodejs.svg"} name = {"NodeJS"} />
+            <HomeSkill src = {"electron.svg"} name = {"Electron"} />
             <HomeSkill src = {"express.svg"} name = {"Express"} backgroundColor = {"white"} />
             <HomeSkill src = {"nestjs.svg"} name = {"NestJS"} />
             <HomeSkill src = {"postgresql.svg"} name = {"PostgreSQL"} />
