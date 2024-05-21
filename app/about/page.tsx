@@ -8,7 +8,7 @@ export default function Page() {
         <AboutHeader />
         <main style = {{ maxWidth: "1280px" }}>
             <AboutSection title = {"Background"}>
-                {"I'm a full stack web developer here to change the world. Most of my experience is in the JavaScript ecosystem, particularly React, but I'm handy with Python as well, among other technologies. I'm always hungry for more tech to learn and more opportunities to build amazing things that improve people's lives. I'm passionate about simplicity, performance, and accessibility, and sometimes about science fiction, altruism, and puzzle games. If you're grappling with a complex problem, I'd welcome the opportunity for an engaging conversation."}
+                {"I'm a full stack web developer here to change the world. Most of my experience is in the JavaScript ecosystem, particularly React, but I'm handy with Python and Elixir as well, among other technologies. I'm always hungry for more tech to learn and more opportunities to build amazing things that improve people's lives. I'm passionate about simplicity, performance, and accessibility, and sometimes about science fiction, altruism, and puzzle games. If you're grappling with a complex problem, I'd welcome the opportunity for an engaging conversation."}
             </AboutSection>
             <AboutSection title = {"Education"}>
                 {"Though most of my skills were picked up on the job or were self-taught, I graduated from Devmountain's excellent web development program in July 2023."}
