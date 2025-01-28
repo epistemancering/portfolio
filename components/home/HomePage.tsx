@@ -28,9 +28,10 @@ export default function HomePage() {
             <HomeSkill src = {"typescript.svg"} name = {"TypeScript"} />
             <HomeSkill src = {"react.svg"} name = {"React"} />
             <HomeSkill src = {"react native.svg"} name = {"React Native"} />
-            <HomeSkill src = {"redux.svg"} name = {"Redux"} />
             <HomeSkill src = {"next.js.svg"} name = {"Next.js"} />
-            <HomeSkill src = {"remix.svg"} name = {"Remix"} />
+            <HomeSkill src = {"react router.svg"} name = {"React Router"} />
+            <HomeSkill src = {"jquery.svg"} name = {"jQuery"} />
+            <HomeSkill src = {"redux.svg"} name = {"Redux"} />
             <HomeSkill src = {"streamlit.svg"} name = {"Streamlit"} />
             <HomeSkill src = {"expo.svg"} name = {"Expo"} />
             <HomeSkill src = {"nodejs.svg"} name = {"NodeJS"} />
