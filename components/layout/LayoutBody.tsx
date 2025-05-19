@@ -1,10 +1,12 @@
+import { usePathname } from "next/navigation"
 import { useContext } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import darkContext from "@/components/darkContext"
-import SvgWrapper from "@/components/SvgWrapper"
-import GradientLink from "@/components/GradientLink"
 import NavMenu from "@/components/layout/NavMenu"
+import GradientLink from "@/components/GradientLink"
+import SvgWrapper from "@/components/SvgWrapper"
+import ResumeLink from "@/components/layout/ResumeLink"
 import FooterLink from "@/components/layout/FooterLink"
 
 export default function LayoutBody(props: { children: React.ReactNode }) {
@@ -37,12 +39,10 @@ export default function LayoutBody(props: { children: React.ReactNode }) {
             <footer style = {{ paddingTop: "80px" }}>
                 <div style = {{ borderStyle: "solid none", borderWidth: "1px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "48px" }} className = {`${getDark ? "shadow-whitesmall bg-darkfaint4 text-gray2" : "shadow-darksmall bg-whitefaint4 text-gray9"} py-20 px-0 lg:p-[120px] flex-col lg:flex-row`}>
                     <h2 style = {{ margin: 0, lineHeight: 1.1, fontWeight: 600, fontFamily: "Rubik" }} className = {`w-60 lg:w-96 text-center lg:text-left text-[26px] lg:text-[42px] ${getDark ? "text-gray9" : "text-gray2"}`}>
-                        Interested in working together?
+                        {usePathname().startsWith("/blog/") ? "Have a comment or correction" : "Interested in working together"}?
                     </h2>
                     <div style = {{ display: "flex", flexWrap: "wrap", columnGap: "48px", rowGap: "24px", alignItems: "center" }} className = {"justify-center lg:justify-end"}>
-                        <GradientLink label = {"View My Resume"} href = {"/resume.pdf"} target = {"_blank"}>
-                            🗏
-                        </GradientLink>
+                        <ResumeLink />
                         <GradientLink label = {"Send Me a Message"} href = {"mailto:nitsua15@gmail.com"}>
                             <SvgWrapper style = {{ height: "100%" }}>
                                 <path fill = {"none"} strokeLinecap = {"round"} strokeLinejoin = {"round"} strokeWidth = {16} d = {"M210.3 35.9 23.9 88.4a8 8 0 0 0-1.2 15l85.6 40.5a7.8 7.8 0 0 1 3.8 3.8l40.5 85.6a8 8 0 0 0 15-1.2l52.5-186.4a7.9 7.9 0 0 0-9.8-9.8Zm-99.4 109.2 45.2-45.2"} />
