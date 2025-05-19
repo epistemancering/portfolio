@@ -239,6 +239,7 @@ export default {
     "windsurf's-ai-assistant-has-full-file-system-access": {
         title: "Windsurf's AI assistant has full file system access",
         description: "Windsurf is glaringly insecure",
+        openGraph: { images: "blog/data-center-shoggoth-infestation.jpg" },
         markdown: WindsurfsAIassistanthasfullfilesystemaccess,
         article: {
             published: "5/19/2025",
@@ -252,6 +253,7 @@ export default {
     [key: string]: {
         title: string,
         description: string,
+        openGraph?: { images: string },
         markdown: string,
         project?: {
             skills: string[],
