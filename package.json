@@ -1,5 +1,5 @@
 {
-    "dependencies": { "react": "^19.1.0", "react-dom": "^19.1.0", "next": "^15.3.2", "sharp": "^0.34.1", "react-markdown": "^10.1.0" },
-    "devDependencies": { "tailwindcss": "^3.4.17", "postcss": "^8.5.3", "autoprefixer": "^10.4.21", "typescript": "^5.8.3", "@types/node": "^22.15.19", "@types/react": "^19.1.4", "@types/react-dom": "^19.1.5", "eslint": "^9.27.0", "eslint-config-next": "^15.3.2" },
+    "dependencies": { "react": "^19.1.0", "react-dom": "^19.1.0", "next": "^15.3.3", "sharp": "^0.34.2", "react-markdown": "^10.1.0" },
+    "devDependencies": { "tailwindcss": "^3.4.17", "postcss": "^8.5.6", "autoprefixer": "^10.4.21", "typescript": "^5.8.3", "@types/node": "^22.15.32", "@types/react": "^19.1.8", "@types/react-dom": "^19.1.6", "eslint": "^9.29.0", "eslint-config-next": "^15.3.3" },
     "scripts": { "start": "next start --port 7678" }
 }

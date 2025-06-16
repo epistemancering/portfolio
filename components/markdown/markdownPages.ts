@@ -46,6 +46,8 @@ Windsurf's AI assistant can read and modify \`personal/private.txt\` regardless 
 
 As Windsurf's disclaimer states, "AI may make mistakes." In other words, since AI models are inherently inscrutable, there can be no assurance that they will behave as intended. It follows that there can be no assurance that the assistant will never invent a reason to access private files, regardless of the model you choose. Furthermore, since all models as of this writing are highly gullible, malicious MCP plugins and even static websites can trivially enlist the assistant to steal secrets or plant malware.
 ## Full read access can't be disabled
+*Update: With Windsurf's 1.10 update on 6/10/2025, \`.codeiumignore\` can now protect files outside of the current folder, which means a \`.codeiumignore\` at the root of your file system is effectively a global ignore list!*
+
 The built-in tools for modifying files are disabled in Chat mode, but the tools for searching for and reading files, i.e. sending your data to Windsurf's servers, are always available. The \`.codeiumignore\` feature can protect files in the current folder, but it doesn't affect files outside of the current folder, even if those files have their own \`.codeiumignore\`. Suppose you create \`.codeiumignore\` files in both folders to try to protect \`personal/private.txt\`:
 \`\`\`
 personal/
