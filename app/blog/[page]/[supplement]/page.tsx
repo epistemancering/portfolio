@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation"
+import { redirect } from "next/navigation"
 import markdownPages from "@/components/markdown/markdownPages"
 import MarkdownPage from "@/components/markdown/MarkdownPage"
 
@@ -18,5 +18,5 @@ export default async function Page(props: {
         return <MarkdownPage page = {pathnameParams.page} supplement = {pathnameParams.supplement} />
     }
 
-    notFound()
+    redirect(`/blog/${pathnameParams.page}`)
 }

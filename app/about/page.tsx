@@ -1,11 +1,14 @@
-import AboutHeader from "@/components/about/AboutHeader"
-import AboutSection from "@/components/about/AboutSection"
+import Image from "next/image"
+import AboutSection from "@/components/AboutSection"
 
 export const metadata = { title: "Austin Henrie | About", description: "About Austin Henrie" }
 
 export default function Page() {
     return <div style = {{ padding: "0 24px", display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <AboutHeader />
+        <h1 style = {{ margin: "0 0 40px", lineHeight: 1.1, fontWeight: 600, fontFamily: "Rubik" }} className = {"text-[42px] lg:text-7xl text-gray0 dark:text-gray11"}>
+            About
+        </h1>
+        <Image className = {"shadow-darklarge dark:shadow-whitelarge"} style = {{ borderRadius: "24px", width: "768px", maxWidth: "100%", height: "auto" }} height = {432} width = {768} src = {"/at-work.png"} sizes = {" "} alt = {"Austin Henrie at work with a colleague"} />
         <main style = {{ maxWidth: "1280px" }}>
             <AboutSection title = {"Background"}>
                 {"I'm a full stack web developer here to change the world. Most of my experience is in the JavaScript ecosystem, particularly React, but I'm handy with Python and Elixir as well, among other technologies. I'm always hungry for more tech to learn and more opportunities to build amazing things that improve people's lives. I'm passionate about simplicity, performance, and accessibility, and sometimes about science fiction, altruism, and puzzle games. If you're grappling with a complex problem, I'd welcome the opportunity for an engaging conversation."}

@@ -1,30 +1,27 @@
-import { useContext, useState } from "react"
-import darkContext from "@/components/darkContext"
+import { useState } from "react"
 import MenuButton from "@/components/layout/MenuButton"
 import RouteLi from "@/components/layout/RouteLi"
 import SvgLink from "@/components/layout/SvgLink"
 import ColorsButton from "@/components/layout/ColorsButton"
 
 export default function NavMenu() {
-    const getDark = useContext(darkContext)[0]
-
     const openState = useState(false)
 
     return <>
-        <div style = {{ borderRadius: "50%", padding: "1px" }} className = {`lg:hidden ${getDark ? "bg-darkborder" : "bg-lightborder"}`}>
+        <div style = {{ borderRadius: "50%", padding: "1px" }} className = {"lg:hidden bg-lightborder dark:bg-darkborder"}>
             <MenuButton openState = {openState} />
         </div>
-        <div className = {`${openState[0] ? "flex" : "hidden"} lg:flex absolute lg:static ${getDark ? "shadow-[0_62px_25px_theme(colors.whitefaint1),0_35px_21px_theme(colors.whitefaint3),0_16px_16px_rgba(255,255,255,.1),0_4px_9px_rgba(255,255,255,.12)] bg-gray0" : "shadow-[0_62px_25px_theme(colors.darkfaint1),0_35px_21px_theme(colors.darkfaint3),0_16px_16px_rgba(9,11,17,.1),0_4px_9px_rgba(9,11,17,.12)] bg-gray11"} lg:shadow-[none] lg:bg-[transparent] rounded-b-xl flex-col lg:flex-row`} style = {{ zIndex: 1, top: "100%", left: 0, width: "100%" }}>
+        <div className = {`${openState[0] ? "flex" : "hidden"} lg:flex absolute lg:static shadow-[0_62px_25px_theme(colors.darkfaint1),0_35px_21px_theme(colors.darkfaint3),0_16px_16px_rgba(9,11,17,.1),0_4px_9px_rgba(9,11,17,.12)] dark:shadow-[0_62px_25px_theme(colors.whitefaint1),0_35px_21px_theme(colors.whitefaint3),0_16px_16px_rgba(255,255,255,.1),0_4px_9px_rgba(255,255,255,.12)] lg:shadow-[none] lg:dark:shadow-[none] bg-gray11 dark:bg-gray0 lg:bg-[transparent] lg:dark:bg-[transparent] rounded-b-xl flex-col lg:flex-row`} style = {{ zIndex: 1, top: "100%", left: 0, width: "100%" }}>
             <div style = {{ width: "100%", display: "flex", justifyContent: "center" }}>
-                <div className = {`lg:rounded-full lg:p-px w-full lg:w-auto ${getDark ? "lg:bg-darkborder" : "lg:bg-lightborder"}`}>
-                    <ul className = {`${getDark ? "lg:shadow-whitelarge lg:bg-[radial-gradient(theme(colors.gray1),theme(colors.gray2)_150%)]" : "lg:shadow-darklarge lg:bg-[radial-gradient(theme(colors.gray10),theme(colors.gray9)_150%)]"} lg:rounded-full p-8 lg:py-2 lg:px-[9px] flex-col lg:flex-row`} style = {{ margin: 0, display: "flex", gap: "16px" }}>
+                <div className = {"lg:rounded-full lg:p-px w-full lg:w-auto lg:bg-lightborder lg:dark:bg-darkborder"}>
+                    <ul className = {"lg:shadow-darklarge lg:dark:shadow-whitelarge lg:bg-[radial-gradient(theme(colors.gray10),theme(colors.gray9)_150%)] lg:dark:bg-[radial-gradient(theme(colors.gray1),theme(colors.gray2)_150%)] lg:rounded-full p-8 lg:py-2 lg:px-[9px] flex-col lg:flex-row"} style = {{ margin: 0, display: "flex", gap: "16px" }}>
                         <RouteLi label = {"Home"} href = {"/"} setOpen = {openState[1]} />
                         <RouteLi label = {"Work"} href = {"/work"} setOpen = {openState[1]} />
                         <RouteLi label = {"About"} href = {"/about"} setOpen = {openState[1]} />
                     </ul>
                 </div>
             </div>
-            <div className = {`border-solid lg:border-none ${getDark ? "text-gray2" : "text-gray9"} lg:w-full lg:bg-[transparent] py-6 pr-8 pl-6 lg:p-0 justify-between lg:justify-end`} style = {{ borderWidth: "1px 0 0", display: "flex", gap: "12px", alignItems: "center" }}>
+            <div className = {"border-solid lg:border-none text-gray9 dark:text-gray2 lg:w-full lg:bg-[transparent] py-6 pr-8 pl-6 lg:p-0 justify-between lg:justify-end"} style = {{ borderWidth: "1px 0 0", display: "flex", gap: "12px", alignItems: "center" }}>
                 <ul className = {"gap-2.5 lg:gap-0"} style = {{ margin: 0, padding: 0, display: "flex" }}>
                     <SvgLink href = {"https://www.linkedin.com/in/austin-henrie/"} label = {"LinkedIn"}>
                         <rect width = {184} height = {184} x = {36} y = {36} fill = {"none"} strokeLinecap = {"round"} strokeLinejoin = {"round"} strokeWidth = {16} rx = {8} />
@@ -44,7 +41,7 @@ export default function NavMenu() {
                 </ul>
                 <div style = {{ position: "relative" }}>
                     <ColorsButton />
-                    <div className = {"bg-accentregular"} style = {{ position: "absolute", top: 0, left: getDark ? "50%" : 0, borderRadius: "50%", height: "100%", width: "50%", transitionDuration: "200ms" }} />
+                    <div className = {"bg-accentregular left-0 dark:left-1/2"} style = {{ position: "absolute", top: 0, borderRadius: "50%", height: "100%", width: "50%", transitionDuration: "200ms" }} />
                 </div>
             </div>
         </div>
