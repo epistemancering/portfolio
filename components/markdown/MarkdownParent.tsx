@@ -1,6 +1,5 @@
 import Link from "next/link"
 import markdownPages from "@/components/markdown/markdownPages"
-import MarkdownPublished from "@/components/markdown/MarkdownPublished"
 
 export default function MarkdownParent(props: { page: string, supplement?: string }) {
     if (props.supplement || markdownPages[props.page].project) {
@@ -9,5 +8,7 @@ export default function MarkdownParent(props: { page: string, supplement?: strin
         </Link>
     }
 
-    return <MarkdownPublished page = {props.page} />
+    return <p className = {"text-gray3 dark:text-gray8"} style = {{ margin: "0 0 13px" }}>
+        {markdownPages[props.page].article?.published}
+    </p>
 }
