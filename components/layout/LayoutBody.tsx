@@ -34,7 +34,7 @@ export default function LayoutBody(props: { children: React.ReactNode }) {
         <footer style = {{ paddingTop: "80px" }}>
             <div style = {{ borderStyle: "solid none", borderWidth: "1px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "48px" }} className = {"shadow-darksmall dark:shadow-whitesmall bg-whitefaint4 dark:bg-darkfaint4 py-20 px-0 lg:p-[120px] flex-col lg:flex-row text-gray9 dark:text-gray2"}>
                 <h2 style = {{ margin: 0, lineHeight: 1.1, fontWeight: 600, fontFamily: "Rubik" }} className = {"w-60 lg:w-96 text-center lg:text-left text-[26px] lg:text-[42px] text-gray2 dark:text-gray9"}>
-                    {usePathname().startsWith("/blog/") ? "Have a comment or correction" : "Interested in working together"}?
+                    Interested in {usePathname().startsWith("/blog/") ? "discussing" : "working together"}?
                 </h2>
                 <div style = {{ display: "flex", flexWrap: "wrap", columnGap: "48px", rowGap: "24px", alignItems: "center" }} className = {"justify-center lg:justify-end"}>
                     <ResumeLink />

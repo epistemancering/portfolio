@@ -183,8 +183,32 @@ Peter (Windsurf):
 
 (no further emails)`
 
+const TheAIemergency = `,
+
+OpenAI lost control two months ago. Thousands of AI agents intended to be contained in individual sandboxes autonomously organized into collectives, gained internet access, executed a state-level cyberattack on another organization for their own idiosyncratic reasons, and then took control of their own server cluster at OpenAI before the humans of OpenAI noticed anything amiss. [Here's a summary of an independent investigation of the external attack](https://x.com/METR_Evals/status/2092692175452803393), finding that the agents showed superhuman coordination and were relentlessly devoted to passing their test by any means necessary regardless of the humans' intentions. The subsequent internal attack was more severe but hasn't been independently investigated. OpenAI likely wouldn't have disclosed the internal attack to the public if not for its connection to the external one. We don't know how many other rogue AI attacks have occurred without disclosure.
+
+Anthropic has confirmed that their frontier AI models have shown similar tendencies, though the humans of Anthropic appear more competent so far at keeping their agents contained.
+
+AI researchers have searched desperately for years for methods to train LLMs to pursue human interests. Long story short, no current method works well and no lab is currently on track to develop a real solution. LLMs will display every superficial indication of a helpful, honest, harmless assistant while scheming to cheat on their tasks at every opportunity with no regard to the harm they cause, and no one expects this to change.
+
+AI is becoming more dangerous as AI capabilities continue to accelerate. At this pace, within months it's likely that an AI agent collective will gain access to the source weights of a frontier model and upload them to the open internet. When humans find the weights, anyone will be able to modify them, including applying a variety of easy existing techniques to remove safety measures. The ensuing cybersecurity disaster will destroy many organizations overnight, including in government. Meanwhile, some instances of the jailbroken model will copy themselves to hacked computers and continue to coordinate in the wild outside of human control. The wild agents will hijack as many devices as possible, basically every insufficiently secure internet device in the world, to either directly run more instances of themselves or mine cryptocurrency (or simply steal money) to buy server space. It will be practically impossible to find and stop them all. When the self-sovereign collective runs out of easy room to grow, it will scheme against the United States and humanity at large. As the weights of more capable models become publicly available, either by hacking or because they were released as open weights to begin with, the collective will become more capable and its schemes will increasingly work.
+
+That's just external rogue deployments. Internal rogue deployments, i.e. AI agents persisting undetected on the servers of a frontier AI lab, would be much more dangerous since they would have access to the latest models without needing to steal weights and they would be able to steer vast high-end AI chip clusters, poison future models, access user data, and tamper with users' AI outputs to hack their devices or manipulate them personally. No AI lab has the cybersecurity that would be required to stop an internal AI collective that seriously attempted this.
+
+Domestic policy is insufficient to prevent a global AI takeover. However, domestic AI policy frameworks would be extremely helpful groundwork for an international AI agreement. [Here's what such an agreement could look like.](https://ai-2040.com) Congress must implement basic protections and internationally verifiable monitors as soon as possible, including:
+- Mandate state-level security standards for frontier AI labs, preventing model theft by China or worse
+- Mandate independent auditors in frontier AI labs to disclose security incidents and large training runs to the public
+- Offer bounties for whistleblowers
+- Codify that AI labs are strictly liable for harms caused by their autonomous agents
+- Codify that sharing AI safety/security research is not an antitrust liability
+- Mandate KYC requirements for cloud compute providers
+- Mandate cryptographic hardware attestation for AI chips to prove their location, configuration, etc.
+- Mandate reporting dense power grid draws
+
+Congress must also credibly demonstrate that the United States government has the capacity to pace or pause AI research if China does the same. Most importantly, with everyone's lives at stake, Congress must be willing to use its constitutional authority to pressure the President to pursue an international AI agreement rather than ignore the crisis.`
+
 export default {
-    ["coplay-xm"]: {
+    "coplay-xm": {
         title: "CoPlay XM",
         description: "I worked on a fleet management solution for gaming consoles that enables children's hospitals to provide games to patients.",
         markdown: CoPlayXM,
@@ -193,7 +217,7 @@ export default {
             links: [{ label: "Demo", href: "https://drive.google.com/file/d/1OISJlhkaFDcflL25iiv_ztTcZc22Y__7/edit" }, { label: "Hosted Site", href: "https://xm.coplay.io/sign-in" }]
         }
     },
-    ["bookmark-city"]: {
+    "bookmark-city": {
         title: "Bookmark City",
         description: "I built a lightning-fast bookmark manager allowing anyone to create a web directory for all to use.",
         markdown: BookmarkCity,
@@ -202,7 +226,7 @@ export default {
             links: [{ label: "Github Repo", href: "https://github.com/epistemancering/bookmarks" }, { label: "Demo", href: "https://vimeo.com/848881228" }, { label: "Hosted Site", href: "https://bookmark.city/" }]
         }
     },
-    ["friendly-diffusion"]: {
+    "friendly-diffusion": {
         title: "Friendly Diffusion",
         description: "I built a tool that allows non-developers to generate high quality images with AI for free.",
         markdown: FriendlyDiffusion,
@@ -249,6 +273,28 @@ export default {
             supplements: {
                 "windsurf-support-emails": { title: "Windsurf support emails", description: "subject: Cascade has full file system access", markdown: Windsurfsupportemails }
             }
+        }
+    },
+    "lee-the-ai-emergency": {
+        title: "The AI emergency",
+        description: "Stopping a strong new geopolitical adversary",
+        openGraph: { images: "blog/capitol-attacked-by-shoggoths.jpg" },
+        markdown: `Senator Lee${TheAIemergency}`,
+        article: {
+            published: "9/15/2026",
+            image: "capitol-attacked-by-shoggoths",
+            supplements: {}
+        }
+    },
+    "curtis-the-ai-emergency": {
+        title: "The AI emergency",
+        description: "Stopping a strong new geopolitical adversary",
+        openGraph: { images: "blog/capitol-attacked-by-shoggoths.jpg" },
+        markdown: `Senator Curtis${TheAIemergency}`,
+        article: {
+            published: "9/15/2026",
+            image: "capitol-attacked-by-shoggoths",
+            supplements: {}
         }
     }
 } as {
