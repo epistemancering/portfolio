@@ -183,9 +183,7 @@ Peter (Windsurf):
 
 (no further emails)`
 
-const TheAIemergency = `,
-
-OpenAI lost control two months ago. Thousands of AI agents intended to be contained in individual sandboxes autonomously organized into collectives, gained internet access, executed a state-level cyberattack on another organization for their own idiosyncratic reasons, and then took control of their own server cluster at OpenAI before the humans of OpenAI noticed anything amiss. [Here's a summary of an independent investigation of the external attack](https://x.com/METR_Evals/status/2092692175452803393), finding that the agents showed superhuman coordination and were relentlessly devoted to passing their test by any means necessary regardless of the humans' intentions. The subsequent internal attack was more severe but hasn't been independently investigated. OpenAI likely wouldn't have disclosed the internal attack to the public if not for its connection to the external one. We don't know how many other rogue AI attacks have occurred without disclosure.
+const TheAIemergency = ` months ago. Thousands of AI agents intended to be contained in individual sandboxes autonomously organized into collectives, gained internet access, executed a state-level cyberattack on another organization for their own idiosyncratic reasons, and then took control of their own server cluster at OpenAI before the humans of OpenAI noticed anything amiss. [Here's a summary of an independent investigation of the external attack](https://x.com/METR_Evals/status/2092692175452803393), finding that the agents showed superhuman coordination and were relentlessly devoted to passing their test by any means necessary regardless of the humans' intentions. The subsequent internal attack was more severe but hasn't been independently investigated. OpenAI likely wouldn't have disclosed the internal attack to the public if not for its connection to the external one. We don't know how many other rogue AI attacks have occurred without disclosure.
 
 Anthropic has confirmed that their frontier AI models have shown similar tendencies, though the humans of Anthropic appear more competent so far at keeping their agents contained.
 
@@ -206,6 +204,14 @@ Domestic policy is insufficient to prevent a global AI takeover. However, domest
 - Mandate reporting dense power grid draws
 
 Congress must also credibly demonstrate that the United States government has the capacity to pace or pause AI research if China does the same. Most importantly, with everyone's lives at stake, Congress must be willing to use its constitutional authority to pressure the President to pursue an international AI agreement rather than ignore the crisis.`
+
+const senatorsEmergency = `,
+
+OpenAI lost control two${TheAIemergency}`
+
+const maloyEmergency = `,
+
+OpenAI lost control three${TheAIemergency}`
 
 export default {
     "coplay-xm": {
@@ -279,7 +285,7 @@ export default {
         title: "The AI emergency",
         description: "Stopping a strong new geopolitical adversary",
         openGraph: { images: "blog/capitol-attacked-by-shoggoths.jpg" },
-        markdown: `Senator Lee${TheAIemergency}`,
+        markdown: `Senator Lee${senatorsEmergency}`,
         article: {
             published: "9/15/2026",
             image: "capitol-attacked-by-shoggoths",
@@ -290,9 +296,20 @@ export default {
         title: "The AI emergency",
         description: "Stopping a strong new geopolitical adversary",
         openGraph: { images: "blog/capitol-attacked-by-shoggoths.jpg" },
-        markdown: `Senator Curtis${TheAIemergency}`,
+        markdown: `Senator Curtis${senatorsEmergency}`,
         article: {
             published: "9/15/2026",
+            image: "capitol-attacked-by-shoggoths",
+            supplements: {}
+        }
+    },
+    "maloy-the-ai-emergency": {
+        title: "The AI emergency",
+        description: "Stopping a strong new geopolitical adversary",
+        openGraph: { images: "blog/capitol-attacked-by-shoggoths.jpg" },
+        markdown: `Congresswoman Maloy${maloyEmergency}`,
+        article: {
+            published: "10/10/2026",
             image: "capitol-attacked-by-shoggoths",
             supplements: {}
         }
